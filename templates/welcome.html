@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    {{ super() }}
+    <script type="text/javascript">var x = 1;</script>
+{% endblock %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+    <h1>Welcome back {{ name }}</h1>
+    <a href = "{{ url_for('logout') }}">Log Out</a>
+{% endblock %}
